@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f5f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.recorder {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#startBtn {
+    background: #111;
+    color: white;
+}
+
+#startBtn:hover {
+    transform: translateY(-2px);
+}
+
+#stopBtn {
+    background: #e8e8e8;
+    color: #333;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#status {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.transcript-box {
+    text-align: left;
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 15px;
+    min-height: 180px;
+}
+
+.transcript-box h2 {
+    margin-bottom: 15px;
+}
+
+#transcript {
+    color: #555;
+    line-height: 1.7;
+}

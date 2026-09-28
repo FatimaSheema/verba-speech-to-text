@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verba - Speech to Text</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Verba</h1>
+
+        <p class="subtitle">Turn your voice into text.</p>
+
+        <div class="recorder">
+
+            <button id="startBtn">
+                🎙️ Start Recording
+            </button>
+
+            <button id="stopBtn" disabled>
+                ⏹️ Stop Recording
+            </button>
+
+        </div>
+
+        <p id="status">Ready to record</p>
+
+        <div class="transcript-box">
+
+            <h2>Transcript</h2>
+
+            <p id="transcript">
+                Your transcription will appear here...
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
